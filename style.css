@@ -1,0 +1,117 @@
+/*
+
+Name: Josh Gooch
+Date: July 21, 2025
+Filename: style.css
+
+*/
+
+body
+{
+    background-color:#B0C4DE;
+}
+
+nav
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:flex-start;
+    background-color:maroon;
+    padding-top:10px;
+    padding-bottom:10px;
+    position:sticky;
+    font-family:Allerta Stencil;
+    border-bottom: 3px solid black;
+}
+
+a.nav-item
+{
+    font-variant: small-caps;
+    text-decoration: none;
+    background-color:darkblue;
+    border: 2px solid black;
+    color: white;
+    font-weight: 400;
+    font-size:24px;
+    padding:3px 5px 3px 5px;
+    border-radius:20px;
+    text-align:center;
+    width:250px;
+    flex: 1 0 100%;
+    /* This prevents "Contact Us from going to a second line when shrinking. */
+    white-space: nowrap;
+}
+
+a:visited.nav-item {
+    color: white;
+}
+
+a:hover.nav-item{
+    background-color: white;
+    color:blue;
+}
+
+#page_header {
+    border-width: 2px 2px 2px 2px;
+    border-style: solid;
+    border-color: black;
+    margin: 10px 5px 10px 5px;
+    text-align:center;
+    font-family:Allerta Stencil;
+    display:block;
+    background-color:#080E4B;
+    color:white;
+    padding-bottom:10px;
+    border-radius:15px;
+}
+
+#page_header h1 {
+
+    text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px red,
+        0 0 30px red,
+        0 0 40px red,
+        0 0 55px red;
+    }
+
+#page_header h5
+{
+    text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px blue,
+        0 0 30px blue,
+        0 0 40px blue;
+}
+
+.container
+{
+    text-align:center;
+}
+
+th, tr, td
+{
+    text-align:center;
+}
+
+.btn:hover
+{
+    background-color:white;
+    color:green;
+}
+
+
+@media screen and (min-width: 600px)
+{
+    nav
+    {
+        flex-direction:row;
+    }
+    
+    a.nav-item
+    {
+        font-size:32px;
+        flex: 0 0 15%;
+    }
+}
